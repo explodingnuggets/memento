@@ -3,10 +3,19 @@ name = "memento"
 version = "0.1.0"
 edition = "2021"
 authors = [
-    "Matheus Bortoleto"
+    "Matheus Bortoleto <matheus.silva.ufscar@gmail.com>"
 ]
+documentation = "https://github.com/explodingnuggets/memento"
+homepage = "https://github.com/explodingnuggets/memento"
 repository = "https://github.com/explodingnuggets/memento"
+rust-version = "1.71"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+bench = false
+path = "crates/core/main.rs"
+name = "memento"
+
 [dependencies]
+clap = { version = "4.3.19", features = ["derive", "suggestions"] }
